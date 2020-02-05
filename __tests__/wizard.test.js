@@ -20,12 +20,26 @@ describe('Wizard', () => {
   test('encounter 1 is won.', () => {
     wizard.winBattle();
     wizard.gainStrength();
-    expect(wizard.experiencePoints).toEqual(25);
+    expect(wizard.experience).toEqual(25);
     expect(wizard.strength).toEqual(3);
   });
 
   test('encounter 2 is lost.', () => {
+    wizard.winBattle();
+    wizard.gainStrength();    
     wizard.loseBattle();
-    
+    expect(wizard.experience).toEqual(15);
+    expect(wizard.health).toEqual(90);
+  });
+
+  test('4 battles are won in a row', () => {
+    wizard.winBattle();
+    wizard.winBattle();
+    wizard.winBattle();
+    wizard.winBattle();
+    if (wizard.experience >= 100) {
+      wizard.levelUp();
+    }
+    expect(wizard.level).toEqual(2);
   });
 });
