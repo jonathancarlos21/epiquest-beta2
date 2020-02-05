@@ -10,11 +10,10 @@ export class Wizard {
 
   winBattle() {
     this.experiencePoints += 25;
-    this.health += 25;
   }
 
   loseBattle() {
-    this.experiencePoints -= 25;
+    this.experiencePoints -= 10;
     this.health -= 25;
   }
 
@@ -26,5 +25,10 @@ export class Wizard {
     this.wisdom++;
   }
 
+  levelUp() {
+    this.level++;
+    this.experiencePoints = 0;
+    this.health += 75;
+  }
 
 };
