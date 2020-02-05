@@ -7,4 +7,24 @@ export class Wizard {
     this.wisdom = 8;
     this.strength = 2;
   }
-}
+
+  winBattle() {
+    this.experiencePoints += 25;
+    this.health += 25;
+  }
+
+  loseBattle() {
+    this.experiencePoints -= 25;
+    this.health -= 25;
+  }
+
+  gainStrength() {
+    this.strength++;
+  }
+
+  gainWisdom() {
+    this.wisdom++;
+  }
+
+
+};
