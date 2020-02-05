@@ -1,8 +1,8 @@
-# Epiquest
+# EpiQuest
 
 #### _2/5/2020_
 
-#### _By Jonathan Carlos_
+#### _By Jonathan Carlos and Joseph Wangemann_
 
 ## **Description**
 
@@ -15,27 +15,16 @@ _This program allows a user to pick between a warrior or a wizard, name that cha
 | Select a character. | Click "Wizard" | Display: _"Welcome, Wizard!_ |
 | Enter a name. | "xMushroomWizard | Display: _"Welcome, xMushroomWizard! -insert stats-"_ |
 | Encounter 1. | - | Display: "_Battle: Win! Your experience has increase by 25! Your strength has increased by 1_" |
-| The cost of size is displayed in the total. | Large($10) | Displayed total: _$10_ |
-| The cost of toppings is added to size. | Large($10) & Mushrooms($2) & Pineapple($3) |  Displayed Cost: _$15_ |
+|  |  |  |
+|  |  |  |
 
 ## **Setup/Installation**
 
-*Option One:*
-1. Step one: Open up your terminal.
-2. Step two: Navigate to the desired directory in which you want to clone this repository.
-3. Step three: Use `` to clone this repository.
-4. Step four: Open the repository.
-5. Step five: Drag the html file into your broswer. 
-6. Step six: Select your pizza size and favorite toppings.
-7. Step seven: Click "Order!"
 
-*Option Two:*
-
-Copy and paste `` into your address bar.
 
 ## **Known Bugs**
 
-This program in its current state does not add the pepperoni nor the spinach toppings to the total cost of the pizza pie.
+This program in its current state does not allow the user to make any decisions.
 
 ## **Support and contact details**
 
@@ -59,6 +48,6 @@ If you have any questions, comments, or concerns, feel free to contact the conte
 
 ## **License**
 
-Copyright (c) 2020 **_Jimmy's Pizza Parlor_**
+Copyright (c) 2020 **_EpiQuest_**
 
 This software is licensed under the MIT license.
