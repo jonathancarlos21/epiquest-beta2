@@ -24,11 +24,17 @@ export class Character {
 
   winBattle() {
     this.experience += 25;
+    if (this.experience >= 100) {
+      this.levelUp();
+    }
   }
 
   loseBattle() {
     this.experience -= 10;
     this.health -= 10;
+    if (this.health <= 0) {
+      console.log("Game over. You lose!")
+    }
   }
 
   gainStrength() {
