@@ -37,7 +37,7 @@ h2 {
   margin-right: 5%;
 }
 
-#characterscreen, #nextscreen, #namescreen, #encounterscreen {
+#characterscreen, #nextscreen, #namescreen, #encounterscreen, #losescreen {
   display: none;
 }
 
@@ -50,16 +50,32 @@ button {
   height: 50px;
   margin: 5px;
   margin-top: 25px;
+  text-align: center;
 }
 
 .charbtn {
   background-color: rgb(155, 155, 70);
   border: 1px solid black;
   border-radius: 15px;
+  margin: 5px;
   height: 50px;
-  width: 15%;
+  margin-top: 25px;
+}
+
+#chartype input {
+  background-color: rgb(155, 155, 70);
+  border: 1px solid black;
+  border-radius: 15px;
+  float: right;
+  width: 30%;
+  height: 50px;
   margin: 5px;
   margin-top: 25px;
+  text-align: center;
+}
+
+.charbtn:hover {
+  cursor: pointer;
 }
 
 .firstLetter {
@@ -73,10 +89,15 @@ button {
   float: right;
 }
 
-input {
-  background-color: darkgray;
+#namescreen input {
+  background-color: rgb(134, 133, 133);
   color: black;
   border: 1px solid black;
   border-radius: 15px;
   text-align: center;
+}
+
+.center {
+  display: flex;
+  align-items: center;
 }

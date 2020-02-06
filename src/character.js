@@ -45,7 +45,8 @@ export class Character {
     this.experience -= 10;
     this.health -= 20;
     if (this.health <= 0) {
-      console.log("Game over. You lose!")
+      document.getElementById("encounterscreen").hide();
+      document.getElementById("losescreen").fadeIn();
     }
   }
 
@@ -79,4 +80,4 @@ export class Character {
   }
 
 
-};
+}
