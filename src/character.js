@@ -20,6 +20,18 @@ export class Character {
       this.wisdom = 2;
       this.strength = 8;
     }
+    if (this.type === "ninja") {
+      this.wisdom = 5;
+      this.strength = 5;
+    }
+    if (this.type === "monk") {
+      this.wisdom = 10;
+      this.strength = 1;
+    }
+    if (this.type === "bowman") {
+      this.wisdom = 6;
+      this.strength = 6;
+    }
   }
 
   winBattle() {
@@ -31,7 +43,7 @@ export class Character {
 
   loseBattle() {
     this.experience -= 10;
-    this.health -= 10;
+    this.health -= 20;
     if (this.health <= 0) {
       console.log("Game over. You lose!")
     }
@@ -49,6 +61,21 @@ export class Character {
     this.level++;
     this.experience = 0;
     this.health += 75;
+  }
+
+  studySession() {
+    this.health -= 10;
+    this.wisdom++;
+  }
+
+  restSession() {
+    this.health += 20;
+    this.experience -= 20;
+  }
+
+  workOut() {
+    this.experience -= 25;
+    this.strength++;
   }
 
 

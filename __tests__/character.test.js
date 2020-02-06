@@ -1,4 +1,4 @@
-import { Character } from './../src/wizard.js';
+import { Character } from '../src/character.js/index.js';
 import { exportAllDeclaration } from '@babel/types';
 
 describe('Character', () => {

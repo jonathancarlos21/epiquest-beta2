@@ -1,0 +1,82 @@
+body, html {
+  height: 100%;
+}
+
+body {
+  background-color: black;
+  height: 100%;
+  color: ivory;
+  font-family: fantasy;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+.box {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+h1 {
+  padding-top: 80px;
+  text-align: center;
+  color: gold;
+  font-size: 666%;
+  margin-bottom: 50px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 5%;
+  color: ivory;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#characterscreen, #nextscreen, #namescreen, #encounterscreen {
+  display: none;
+}
+
+button {
+  background-color: rgb(155, 155, 70);
+  border: 1px solid black;
+  border-radius: 15px;
+  float: right;
+  width: 30%;
+  height: 50px;
+  margin: 5px;
+  margin-top: 25px;
+}
+
+.charbtn {
+  background-color: rgb(155, 155, 70);
+  border: 1px solid black;
+  border-radius: 15px;
+  height: 50px;
+  width: 15%;
+  margin: 5px;
+  margin-top: 25px;
+}
+
+.firstLetter {
+  float: left;
+  color: gold;
+  font-size: 402%;
+}
+
+#nameform {
+  margin: 25px;
+  float: right;
+}
+
+input {
+  background-color: darkgray;
+  color: black;
+  border: 1px solid black;
+  border-radius: 15px;
+  text-align: center;
+}
