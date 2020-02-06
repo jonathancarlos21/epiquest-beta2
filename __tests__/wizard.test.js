@@ -1,23 +1,22 @@
-import { Wizard } from './../src/wizard.js';
+import { Character } from './../src/wizard.js';
 import { exportAllDeclaration } from '@babel/types';
 
-describe('Wizard', () => {
+describe('Character', () => {
   let wizard;
 
   beforeEach(() => {
-    wizard = new Wizard("name");
+    wizard = new Character();
   });
 
-  test('user picks character', () => {
+  test('user enters name & chooses character', () => {
+    wizard.setName("userName", "wizard");
+    expect(wizard.name).toEqual("userName");
     expect(wizard.wisdom).toEqual(8);
     expect(wizard.strength).toEqual(2);
   });
 
-  test('user enters name', () => {
-    expect(wizard.name).toEqual("name");
-  });
-
   test('encounter 1 is won.', () => {
+    wizard.setName("userName", "wizard");
     wizard.winBattle();
     wizard.gainStrength();
     expect(wizard.experience).toEqual(25);
@@ -25,6 +24,7 @@ describe('Wizard', () => {
   });
 
   test('encounter 2 is lost.', () => {
+    wizard.setName("userName", "wizard");
     wizard.winBattle();
     wizard.gainStrength();    
     wizard.loseBattle();
@@ -33,6 +33,7 @@ describe('Wizard', () => {
   });
 
   test('4 battles are won in a row', () => {
+    wizard.setName("userName", "wizard");
     wizard.winBattle();
     wizard.winBattle();
     wizard.winBattle();
